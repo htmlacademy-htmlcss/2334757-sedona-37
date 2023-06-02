@@ -1,0 +1,47 @@
+.hero {
+  width: 1200px;
+  height: 485px;
+  background-image: url("../images/hero-background.jpg");
+}
+
+.advices-item-title-1::before {
+  content: "";
+  width: 75px;
+  height: 72px;
+  display: block;
+  background-image: url("../images/house-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advices-item-title-2::before {
+  content: "";
+  width: 74px;
+  height: 70px;
+  display: block;
+  background-image: url("../images/food-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advices-item-title-3::before {
+  content: "";
+  width: 64px;
+  height: 76px;
+  display: block;
+  background-image: url("../images/gift-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscription {
+  background-image: url("../images/background-subscription.jpg");
+  width: 1200px;
+  height: 415px;
+  background-size: cover;
+}
+
+.image-container {
+  background-image: url("../images/background-catalog.jpg");
+  background-size: cover;
+}
