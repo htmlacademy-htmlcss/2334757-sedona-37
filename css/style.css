@@ -1,47 +1,98 @@
+.navigation-icon-search:before {
+  content: url("../images/icons/search-icon.svg")
+}
+
+.navigation-icon-favorites:before {
+  content: url("../images/icons/heart-icon.svg");
+}
+
 .hero {
   width: 1200px;
   height: 485px;
-  background-image: url("../images/hero-background.jpg");
+  background-image: url("../images/backgrounds/hero-background.jpg");
 }
 
-.advices-item-title-1::before {
+.image-cafe {
+  display: block;
+  background-image: url("../images/backgrounds/photo-cafe.jpg");
+  width: 800px;
+  height: 385px;
+}
+
+.image-bridge {
+  display: block;
+  background-image: url("../images/backgrounds/photo-bridge.jpg");
+  width: 800px;
+  height: 385px;
+}
+
+.advices-item-title-house:before {
   content: "";
   width: 75px;
   height: 72px;
   display: block;
-  background-image: url("../images/house-icon.svg");
+  background-image: url("../images/icons/house-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.advices-item-title-2::before {
+.advices-item-title-food::before {
   content: "";
   width: 74px;
   height: 70px;
   display: block;
-  background-image: url("../images/food-icon.svg");
+  background-image: url("../images/icons/food-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.advices-item-title-3::before {
+.advices-item-title-souvenirs::before {
   content: "";
   width: 64px;
   height: 76px;
   display: block;
-  background-image: url("../images/gift-icon.svg");
+  background-image: url("../images/icons/gift-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.subscription {
-  background-image: url("../images/background-subscription.jpg");
+.subscription-index {
+  background-image: url("../images/backgrounds/background-subscription.jpg");
   width: 1200px;
   height: 415px;
   background-size: cover;
 }
 
+.social-icon-vk:before {
+  content: url("../images/icons/vk-icon.svg")
+}
+
+.social-icon-telegram:before {
+  content: url("../images/icons/telegram-icon.svg");
+}
+
+.social-icon-youtube:before {
+  content: url("../images/icons/youtube-icon.svg");
+}
+
+.image-logo-academy {
+  content: url("../images/logo/academy-logo.svg");
+}
+
 .image-container {
-  background-image: url("../images/background-catalog.jpg");
+  background-image: url("../images/backgrounds/background-catalog.jpg");
   background-size: cover;
+}
+
+.icon-tile {
+  content: url("../images/icons/view-tile.svg");
+}
+
+
+.icon-slide {
+  content: url("../images/icons/view-slide.svg");
+}
+
+.icon-list {
+  content: url("../images/icons/view-list.svg");
 }

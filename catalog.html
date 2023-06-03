@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Гостиницы в Седоне</title>
+    <title>Гостиницы / Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="#">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,7 +12,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
+            <img src="images/logo/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
           </a>
           <ul class="navigation-list">
             <li class="'navigation-item">
@@ -27,14 +27,13 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="'navigation-item">
-              <a class="navigation-link" href="#">
-                <img class="navigation-icon" src="images/search-icon.svg" width="20" height="20" alt="Иконка поиска.">
+              <a class="navigation-link navigation-icon-search" href="#">
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="'navigation-item">
-              <a class="navigation-link" href="#">
-                <img class="navigation-icon" src="images/heart-icon.svg" width="20" height="20" alt="Иконка избранное.">
+              <a class="navigation-link navigation-icon-favorites" href="#">
+                <span class="green-circle"></span>
                 <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
@@ -140,21 +139,18 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="rating">Сначала с высоким рейтингом</option>
           </select>
-          <a class="button button-change-view" href="#">
-            <img class="view-icon" src="images/view-tile.svg" width="16" height="14" alt="Иконка для показа карточками.">
+          <a class="button button-change-view icon-tile" href="#">
             <span class="visually-hidden">Показать карточки.</span>
           </a>
-          <a class="button button-change-view" href="#">
-            <img class="view-icon" src="images/view-slide.svg" width="16" height="14" alt="Иконка для показа по одному.">
+          <a class="button button-change-view icon-slide" href="#">
             <span class="visually-hidden">Показать по одному.</span>
           </a>
-          <a class="button button-change-view" href="#">
-            <img class="view-icon" src="images/view-list.svg" width="16" height="14" alt="Иконка для показа списком.">
+          <a class="button button-change-view icon-list" href="#">
             <span class="visually-hidden">Показать список.</span>
           </a>
           <ul class="hotels-list">
             <li class="hotels-item">
-              <img class="hotels-image" src="images/hotel-1.jpg" width="300" height="212" alt="Фотография гостиницы Amara Resort & Spa.">
+              <img class="hotels-image" src="images/hotels/hotel-amara.jpg" width="300" height="212" alt="Фотография гостиницы Amara Resort & Spa.">
               <a class="hotels-link" href="#">
                 <h3 class="hotel-name">Amara Resort & Spa</h3>
               </a>
@@ -168,7 +164,7 @@
               <span class="rating">Рейтинг 8,5</span>
             </li>
             <li class="hotels-item">
-              <img class="hotels-image" src="images/hotel-2.jpg" width="300" height="212" alt="Фотография гостиницы Villas at Poco Diablo.">
+              <img class="hotels-image" src="images/hotels/hotel-poco-diablo.jpg" width="300" height="212" alt="Фотография гостиницы Villas at Poco Diablo.">
               <a class="hotels-link" href="#">
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
               </a>
@@ -182,7 +178,7 @@
               <span class="rating">Рейтинг 9,2</span>
             </li>
             <li class="hotels-item">
-              <img class="hotels-image" src="images/hotel-3.jpg" width="300" height="212" alt="Фотография гостиницы Desert Quail Inn.">
+              <img class="hotels-image" src="images/hotels/hotel-desert-quail.jpg" width="300" height="212" alt="Фотография гостиницы Desert Quail Inn.">
               <a class="hotels-link" href="#">
                 <h3 class="hotel-name">Desert Quail Inn</h3>
               </a>
@@ -196,7 +192,7 @@
               <span class="rating">Рейтинг 6,9</span>
             </li>
             <li class="hotels-item">
-              <img class="hotels-image" src="images/hotel-4.jpg" width="300" height="212" alt="Фотография гостиницы GreenTree Inn.">
+              <img class="hotels-image" src="images/hotels/hotel-greentree.jpg" width="300" height="212" alt="Фотография гостиницы GreenTree Inn.">
               <a class="hotels-link" href="#">
                 <h3 class="hotel-name">GreenTree Inn</h3>
               </a>
@@ -250,28 +246,25 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link" href="#" target='_blank' rel="nofollow">
-                <img class="social-icon" src="images/vk-logo.svg" width="24" height="14" alt="Иконка Вконтакте.">
+              <a class="social-link social-icon-vk" href="#" target='_blank' rel="nofollow">
                 <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#" target='_blank' rel="nofollow">
-                <img class="social-icon" src="images/telegram-logo.svg" width="18" height="15" alt="Иконка Телеграм.">
+              <a class="social-link social-icon-telegram" href="#" target='_blank' rel="nofollow">
                 <span class="visually-hidden">Telegram.</span>
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#" target='_blank' rel="nofollow">
-                <img class="social-icon" src="images/youtube-logo.svg" width="22" height="17" alt="Иконка Ютуб.">
+              <a class="social-link social-icon-youtube" href="#" target='_blank' rel="nofollow">
                 <span class="visually-hidden">Youtube.</span>
               </a>
             </li>
           </ul>
         </section>
         <a class="telephone-nubmer" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="logo-academy" href="https://htmlacademy.ru/">
-          <img class="academy-logo" src="images/academy-logo.svg" alt="Логотип htmlacademy.">
+        <a class="logo-academy image-logo-academy" href="https://htmlacademy.ru/">
+          <span class="visually-hidden"> Ссылка на сайт HTML-Academy.</span>
         </a>
       </footer>
     </div>
