@@ -11,7 +11,7 @@
     <div class="container">
       <header class="main-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo navigation-logo-catalog" href="index.html">
             <img src="images/logo/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
           </a>
           <ul class="navigation-list">
@@ -68,20 +68,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimpool" checked>
-                      Бассейн
+                      <input class=" visually-hidden control-input" type="checkbox" name="swimpool" checked>
+                      <span class="style-checkbox"></span>
+                      <span>Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                      <span class="style-checkbox"></span>
+                      <span>Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-fi
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                      <span class="style-checkbox"></span>
+                      <span>Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -91,20 +94,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="hotels" checked>
-                      Гостиница
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="hotels" checked>
+                      <span class="style-radio"></span>
+                      <span>Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="motels">
-                      Мотель
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="motels">
+                      <span class="style-radio"></span>
+                      <span>Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="house-type" value="apartments">
-                      Апартаменты
+                      <input class="visually-hidden control-input" type="radio" name="house-type" value="apartments">
+                      <span class="style-radio"></span>
+                      <span>Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -115,22 +121,34 @@
                   <li class="catalog-filter-fields-item">
                     <label class="price">
                       <span class="visually-hidden">Минимальная цена.</span>
-                      <input type="number" name="price-min" placeholder="от">
+                      <input class="field-price field-price-min" type="number" value="0" name="price-min">
+                      <span>от</span>
                     </label>
                   </li>
                   <li class="catalog-filter-fields-item">
                     <label class="price">
                       <span class="visually-hidden">Максимальная цена.</span>
-                      <input type="number" name="price-max" placeholder="до">
+                      <input class="field-price field-price-max" type="number" value="9000" name="price-max">
+                      <span>до</span>
                     </label>
-                    <label class="range-price">
-                      <span class="visually-hidden">Ползунок регулировки цены.</span>
-                      <input type="range" name="range">
-                    </label>
+                  <li class="catalog-filter-fields-item">
+                    <div class="range-price">
+                      <div class="range-bar">
+                        <span class="visually-hidden">Ползунок регулировки цены.</span>
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
                   </li>
                 </ul>
-                <button class="button blue-button button-apply" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
+                <div class="button-container">
+                  <button class="button blue-button button-apply" type="submit">Применить</button>
+                  <button class="button button-reset no-background-button" type="reset">Сбросить</button>
+                </div>
               </fieldset>
             </form>
           </section>
