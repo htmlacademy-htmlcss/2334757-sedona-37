@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo navigation-logo-catalog" href="index.html">
             <img src="images/logo/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="'navigation-item">
-              <a class="button button-want" href="#">
+              <a class="button button-want brown-button button-disabled" href="#">
                 Хочу сюда!
               </a>
             </li>
@@ -60,7 +60,7 @@
               </li>
             </ul>
           </header>
-          <section class="catalog-products">
+          <section class="catalog-products" data-test="filter">
             <h2 class="visually-hidden" hidden>Фильтр каталога.</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -153,7 +153,7 @@
             </form>
           </section>
         </div>
-        <section class="found-hotels">
+        <section class="found-hotels" data-test="catalog">
           <div class="found-hotels-container">
             <h2 class="visually-hidden" hidden>Найденные гостиницы.</h2>
             <p class="found-hotels-title">Найдено гостиниц: 38</p>
@@ -164,7 +164,7 @@
             </select>
             <ul class="buttons-change-view-list">
               <li class="buttons-change-view-item">
-                <a class="button button-change-view button-change-view-current" href="#">
+                <button class="button button-change-view button-change-view-current" type="button">
                   <svg class="icon-tile" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0H0V6H4V0Z"/>
                     <path d="M16 0H12V6H16V0Z"/>
@@ -174,10 +174,10 @@
                     <path d="M10 8H6V14H10V8Z"/>
                   </svg>
                   <span class="visually-hidden">Показать карточками.</span>
-                </a>
+                </button>
               </li>
               <li class="buttons-change-view-item">
-                <a class="button button-change-view" href="#">
+                <button class="button button-change-view" type="button">
                   <svg class="icon-slide" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_33548_952)">
                     <path d="M16 12H0V14H16V12Z"/>
@@ -190,10 +190,10 @@
                     </defs>
                   </svg>
                   <span class="visually-hidden">Показать по одному.</span>
-                </a>
+                </button>
               </li>
               <li class="buttons-change-view-item">
-                <a class="button button-change-view" href="#">
+                <button class="button button-change-view" type="button">
                   <svg class="icon-list" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_33548_953)">
                     <path d="M2 0H0V2H2V0Z"/>
@@ -212,7 +212,7 @@
                     </defs>
                   </svg>
                   <span class="visually-hidden">Показать списком.</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -226,7 +226,7 @@
               </a>
               <span class="hotel-type">Гостиница</span>
               <b class="hotel-price">От 4000 ₽</b>
-              <button class="button button-more" type="button">Подробнее</button>
+              <button class="button button-more brown-button" type="button">Подробнее</button>
               <button class="button blue-button button-favorites" type="button">В Избранное</button>
               <p class="stars star-4">
                 <span class="visually-hidden">4 звезды.</span>
@@ -242,7 +242,7 @@
               </a>
               <span class="hotel-type">Гостиница</span>
               <b class="hotel-price">От 5000 ₽</b>
-              <button class="button button-more" type="button">Подробнее</button>
+              <button class="button button-more brown-button" type="button">Подробнее</button>
               <button class="button green-button button-favorites button-favorites-current" type="button">В Избранном</button>
               <p class="stars star-4">
                 <span class="visually-hidden">4 звезды.</span>
@@ -258,7 +258,7 @@
               </a>
               <span class="hotel-type">Гостиница</span>
               <b class="hotel-price">От 2500 ₽</b>
-              <button class="button button-more" type="button">Подробнее</button>
+              <button class="button button-more brown-button" type="button">Подробнее</button>
               <button class="button blue-button button-favorites" type="button">В Избранное</button>
               <p class="stars star-3">
                 <span class="visually-hidden">3 звезды.</span>
@@ -274,7 +274,7 @@
               </a>
               <span class="hotel-type">Гостиница</span>
               <b class="hotel-price">От 1500 ₽</b>
-              <button class="button button-more" type="button">Подробнее</button>
+              <button class="button button-more brown-button" type="button">Подробнее</button>
               <button class="button blue-button button-favorites" type="button">В Избранное</button>
               <p class="stars star-2">
                 <span class="visually-hidden">2 звёзды.</span>
@@ -303,7 +303,7 @@
             </li>
           </ul>
         </section>
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <div class="subscription-container">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -319,7 +319,7 @@
           </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <div class="footer-container">
           <section class="footer-social">
             <h2 class="visually-hidden">Список социальных сетей.</h2>
@@ -351,12 +351,11 @@
             </ul>
           </section>
           <section class="contacts">
-            <a class="telephone-nubmer" href="tel:+78128121212">+7 (812) 812-12-12
-              <span class="visually-hidden">Телефон для связи.</span>
-            </a>
+            <h2 class="visually-hidden">Телефон для связи.</h2>
+            <a class="telephone-nubmer" href="tel:+78128121212">+7 (812) 812-12-12 </a>
           </section>
           <a class="footer-logo" href="https://htmlacademy.ru/">
-            <svg class="logo-academy" aria-hidden="true" focusable="false"width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="logo-academy" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
               <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
               <path d="M26.6 5.15645H21.8V1.45645H19.8V5.25645H17.9V7.25645H19.8V13.2564C19.8 14.9564 20.8 15.9564 22.5 15.9564H26.6V13.9564H22.9C22.2 13.9564 21.8 13.5564 21.8 12.8564V7.15645H26.6V5.15645Z"/>
