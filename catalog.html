@@ -22,7 +22,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="'navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="'navigation-item">
-              <a class="button button-want brown-button button-disabled" href="#">
+              <a class="button button-want brown-button" href="#">
                 Хочу сюда!
               </a>
             </li>
@@ -49,16 +49,19 @@
         <div class="filter-image-container">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
+            <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
-                  <span class="visually-hidden">Главная страница.</span>
+                  <span class="visually-hidden">На главную страницу.</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
+                <svg width="8" height="11" aria-hidden="true" focusable="false" viewBox="0 0 8 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4687 1.66526 10.4687C1.79026 10.4687 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"/>
+                </svg>
                 <a class="breadcrumbs-link breadcrumbs-link-hotels" href="#">Гостиницы</a>
               </li>
-            </ul>
+            </ol>
           </header>
           <section class="catalog-products" data-test="filter">
             <h2 class="visually-hidden" hidden>Фильтр каталога.</h2>
@@ -122,14 +125,14 @@
                     <label class="price">
                       <span class="visually-hidden">Минимальная цена.</span>
                       <input class="field-price field-price-min" type="number" value="0" name="price-min">
-                      <span>от</span>
+                      <span class="price-min">от</span>
                     </label>
                   </li>
                   <li class="catalog-filter-fields-item">
                     <label class="price">
                       <span class="visually-hidden">Максимальная цена.</span>
                       <input class="field-price field-price-max" type="number" value="9000" name="price-max">
-                      <span>до</span>
+                      <span class="price-max">до</span>
                     </label>
                   <li class="catalog-filter-fields-item">
                     <div class="range-price">
@@ -284,7 +287,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item pagination-current">
-              <a class="pagination-link pagination-link-current" href="#">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item blue-button">
               <a class="pagination-link" href="#">2</a>
@@ -296,7 +299,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item pagination-disabled">
-              <a class="pagination-link pagination-link-disabled" href="#">...</a>
+              <a class="pagination-link pagination-link-disabled">...</a>
             </li>
             <li class="pagination-item blue-button">
               <a class="pagination-link" href="#">10</a>
@@ -309,7 +312,7 @@
             <p class="subscription-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscription-label">
-                <span class="visually-hidden">Ваш E-mail.</span>
+                <span class="visually-hidden">Укажите ваш E-mail.</span>
                 <input class="subscription-field subscription-field-dark" type="email" name="subscription-email" placeholder="Ваш e-mail">
               </label>
               <button class="button blue-button subscription-button" type="submit">

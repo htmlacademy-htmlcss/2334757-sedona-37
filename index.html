@@ -11,12 +11,12 @@
     <div class="container">
       <header class="main-header" data-test="header">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo">
             <img src="images/logo/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
           </a>
           <ul class="navigation-list">
             <li class="'navigation-item">
-              <a class="navigation-link navigation-link-current" href="#">Главная</a>
+              <a class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="'navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="'navigation-item">
-              <a class="button button-want brown-button" href="#">
+              <a class="button button-want brown-button" href="modal.html">
                 Хочу сюда!
               </a>
             </li>
@@ -56,7 +56,7 @@
           <ul class="advantages-list">
             <li class="advantages-item blue-background">
               <div class="text-container">
-                <h3 class="advantages-item-title">Настоящий городок</h3>
+                <h3 class="advantages-item-title">Настоящий &nbsp;городок</h3>
                 <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="image-cafe" src="images/photo-cafe.jpg" width="800" height="385" alt="Фотография кафе в городе Седона.">
@@ -127,7 +127,7 @@
             <p class="subscription-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscription-label">
-                <span class="visually-hidden">Ваш E-mail.</span>
+                <span class="visually-hidden">Укажите ваш E-mail.</span>
                 <input class="subscription-field" type="email" name="subscription-email" placeholder="Ваш e-mail">
               </label>
               <button class="button blue-button subscription-button" type="submit">
@@ -194,7 +194,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Кнопка закрытия модального окна.</span>
         </button>
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -203,7 +203,7 @@
             <label class="field-title" for="date-in">
               Дата Заезда:
             </label>
-              <input class="auth-form-field auth-form-field-dates" type="text" id="date-in" name="date-in" placeholder="Укажите дату">
+              <input class="auth-form-field auth-form-field-dates" type="text" id="date-in" name="date-in" placeholder="Укажите дату" required>
               <svg class="calendar-icon-first" aria-hidden="true" focusable="false" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" /><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" /><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" /></svg>
               <span class="error-date-in">Мы не можем отправить вас в прошлое.</span>
               <span class="work-date-in">На эти даты есть свободные номера. Пока есть.</span>
@@ -212,7 +212,7 @@
             <label class="field-title" for="date-out">
               Дата Выезда:
             </label>
-              <input class="auth-form-field auth-form-field-dates" type="text" id="date-out" name="date-out" placeholder="Укажите дату">
+              <input class="auth-form-field auth-form-field-dates" type="text" id="date-out" name="date-out" placeholder="Укажите дату" required>
               <svg class="calendar-icon-second" aria-hidden="true" focusable="false" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" /><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" /><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" /></svg>
               <span class="error-date-out">Мы не можем отправить вас в прошлое.</span>
               <span class="work-date-out">На эти даты есть свободные номера. Пока есть.</span>
@@ -223,12 +223,12 @@
                 Взрослые:
               </label>
               <div class="people-range-container">
-                <button class="button-range button-minus" type="button">
+                <button class="button-range button-minus" type="button" aria-label="Убавить количество взрослых.">
                   <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" /></svg>
                 </button>
-                <input class="auth-form-field auth-form-field-people" type="number" id="adults" name="adults" disabled>
+                <input class="auth-form-field auth-form-field-people" type="number" id="adults" name="adults" aria-label="Указанное количество взрослых." disabled>
                 <span>2</span>
-                <button class="button-range button-plus" type="button">
+                <button class="button-range button-plus" type="button" aria-label="Прибавить количество взрослых.">
                   <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
                 </button>
               </div>
@@ -239,7 +239,7 @@
                   Дети:
                 </label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+                  <button class="tooltip-toggle" type="button" aria-label="Подсказка.">
                     <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
                   </button>
                   <span class="tooltip-text">
@@ -248,12 +248,12 @@
                 </span>
               </span>
               <div class="people-range-container">
-                <button class="button-range button-minus" type="button">
+                <button class="button-range button-minus" type="button" aria-label="Убавить количество детей.">
                   <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" /></svg>
                 </button>
-                <input class="auth-form-field auth-form-field-people" type="number" id="children" name="children" disabled>
+                <input class="auth-form-field auth-form-field-people" type="number" id="children" name="children" aria-label="Указанное количество детей." disabled>
                 <span>2</span>
-                <button class="button-range button-plus" type="button">
+                <button class="button-range button-plus" type="button" aria-label="Прибавить количество детей.">
                   <svg class="plus-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
                 </button>
               </div>
