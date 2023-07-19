@@ -31,8 +31,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -884,7 +883,7 @@ a.navigation-icon-favorites {
   outline: none;
 }
 
-.footer-logo:focus .logo-academy path {
+.footer-logo:focus .logo-academy {
   fill: #756157;
 }
 
@@ -1717,7 +1716,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-webkit-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1726,7 +1725,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-moz-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1735,7 +1734,7 @@ input[type=range]  {
 }
 
 .auth-form-field:-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1744,7 +1743,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1753,7 +1752,7 @@ input[type=range]  {
 }
 
 .auth-form-field::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1762,7 +1761,7 @@ input[type=range]  {
 }
 
 .auth-form-field[type="text"] {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
