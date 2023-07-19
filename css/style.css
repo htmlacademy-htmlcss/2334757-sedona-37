@@ -31,8 +31,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -175,6 +174,10 @@ img {
   outline: none;
   border: none;
   cursor: default;
+}
+
+.display-none {
+  display: none;
 }
 
 .navigation {
@@ -880,7 +883,7 @@ a.navigation-icon-favorites {
   outline: none;
 }
 
-.footer-logo:focus .logo-academy path {
+.footer-logo:focus .logo-academy {
   fill: #756157;
 }
 
@@ -1031,6 +1034,7 @@ a.navigation-icon-favorites {
   padding: 0;
   list-style: none;
   width: 288px;
+  height: 104px;
 }
 
 .control-input[type="checkbox"]:checked +.style-checkbox {
@@ -1232,6 +1236,7 @@ input[type=range]  {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 191px;
+  height: fit-content;
 }
 
 .button-apply {
@@ -1244,7 +1249,7 @@ input[type=range]  {
   background-color: #82B3D3;
   cursor: pointer;
   width: 191px;
-  min-height: 20px;
+  min-height: 36px;
   word-break: break-word;
 }
 
@@ -1257,7 +1262,7 @@ input[type=range]  {
   background: none;
   cursor: pointer;
   width: 191px;
-  min-height: 20px;
+  min-height: 36px;
   word-break: break-word;
 }
 
@@ -1711,7 +1716,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-webkit-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1720,7 +1725,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-moz-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1729,7 +1734,7 @@ input[type=range]  {
 }
 
 .auth-form-field:-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1738,7 +1743,7 @@ input[type=range]  {
 }
 
 .auth-form-field::-ms-input-placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1747,7 +1752,7 @@ input[type=range]  {
 }
 
 .auth-form-field::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1756,7 +1761,7 @@ input[type=range]  {
 }
 
 .auth-form-field[type="text"] {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -2024,7 +2029,6 @@ input[type=range]  {
   word-break: break-word;
   font-size: 16px;
   color: #FF5757;
-  /* display: none; */
 }
 
 .error-date-out {
@@ -2049,5 +2053,4 @@ input[type=range]  {
   margin-left: 157px;
   word-break: break-word;
   font-size: 16px;
-  /* display: none; */
 }
